@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Pole from './components/pole/pole';
+import Buttons from './components/buttons/buttons';
+import Equal from './components/equall/equall';
+import ClearButton from './components/clear/clear'
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Pole/>
+      <Buttons/>
+      <Equal/>
+      <ClearButton/>
     </div>
   );
 }
